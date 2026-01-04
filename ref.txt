@@ -24,3 +24,6 @@ rails generate model Quote name:string
 rails db:migrate
 
 rails generate controller Quotes
+---------------------------------------------------
+
+rails db:seed
