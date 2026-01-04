@@ -1,0 +1,8 @@
+https://www.hotrails.dev/
+https://www.hotrails.dev/turbo-rails
+https://www.hotrails.dev/turbo-rails/turbo-rails-tutorial-introduction
+
+
+rails new turbo-rails-quote-editor --css=sass --javascript=esbuild --database=postgresql
+bin/setup
+bin/dev 
