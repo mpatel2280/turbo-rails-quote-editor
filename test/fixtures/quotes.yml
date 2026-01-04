@@ -1,10 +1,7 @@
-# test/fixtures/quotes.yml
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-first:
-  name: First quote
+one:
+  name: MyString
 
-second:
-  name: Second quote
-
-third:
-  name: Third quote
+two:
+  name: MyString
