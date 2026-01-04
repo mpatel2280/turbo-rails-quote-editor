@@ -7,7 +7,7 @@ rails new turbo-rails-quote-editor --css=sass --javascript=esbuild --database=po
 bin/setup
 bin/dev 
 
-
+---------------------------------------------------
 bin/rails g system_test quotes
 touch test/fixtures/quotes.yml
 
@@ -17,5 +17,10 @@ bun run build
 
 bun add -d sass
 
-
 bin/rails test:system 
+---------------------------------------------------
+
+rails generate model Quote name:string
+rails db:migrate
+
+rails generate controller Quotes
