@@ -31,3 +31,7 @@ rails db:
 
 rails g authentication
 rails db:migrate
+
+---------------------------------------------------
+rails credentials:edit --environment production
+rails credentials:edit --environment development
