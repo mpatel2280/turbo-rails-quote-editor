@@ -23,10 +23,16 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-
 development:
-  <<: *default
-  database: turbo_rails_quote_editor_dev
+  primary:
+    <<: *default
+    database: turbo_rails_quote_editor_dev
+    
+  cache:
+    <<: *default
+    database: turbo_rails_quote_editor_cache
+    migrations_paths: db/cache_migrate
+
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.

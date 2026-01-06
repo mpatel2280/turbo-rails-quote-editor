@@ -12,6 +12,7 @@
   <%= turbo_frame_tag Quote.new %>
 
   <%= turbo_frame_tag "quotes" do %>
-    <%= render @quotes %>
+    <%# Using 'cached: true' here triggers Solid Cache for the whole collection %>
+    <%= render partial: "quotes/quote", collection: @quotes, cached: true %>
   <% end %>
 </div>
