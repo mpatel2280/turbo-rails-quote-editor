@@ -26,7 +26,7 @@ rails db:migrate
 rails generate controller Quotes
 ---------------------------------------------------
 
-rails db:
+rails db:seed
 ---------------------------------------------------
 
 rails g authentication
